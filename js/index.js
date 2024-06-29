@@ -1,46 +1,46 @@
 let imagenes = [
     {
-        "url": "../photos/divorcio.png",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/divorcio.png",
         "descripcion": "Divorcio"
 
     },
     {
-        "url": "../photos/pension.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/pension.webp",
         "descripcion": "Pensión alimenticia"
 
     },
     {
-        "url": "../photos/custodia.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/custodia.webp",
         "descripcion": "Custodia"
 
     },
     {
-        "url": "../photos/Patria.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/Patria.webp",
         "descripcion": "Patria potestad"
 
     },
     {
-        "url": "../photos/convivencia.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/convivencia.webp",
         "descripcion": "Convivencia y guarda de menores"
 
     },
     {
-        "url": "../photos/rectificacion.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/rectificacion.webp",
         "descripcion": "Rectificación y nulidad de todo tipo de actas civiles"
 
     },
     {
-        "url": "../photos/cobranza.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/cobranza.jfif",
         "descripcion": "Cobranza de documentos mercantiles"
 
     },
     {
-        "url": "../photos/hipotecas.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/hipotecas.webp",
         "descripcion": "Hipotecas"
 
     },
     {
-        "url": "../photos/demandasMercantiles.jfif",
+        "url": "https://Trexpapu.github.io/JoseLuisLopez.github.io/photos/demandasMercantiles.webp",
         "descripcion": "Demandas mercantiles"
 
     },
@@ -63,7 +63,7 @@ atras.addEventListener('click', function(){
         actual = imagenes.length - 1
     }
 
-    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina" loading="lazy"></img>`
+    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="Foto" loading="lazy"></img>`
     texto.innerHTML = `
     
     <p>${imagenes[actual].descripcion}</p>
@@ -77,7 +77,7 @@ adelante.addEventListener('click', function(){
         actual = 0
     }
 
-    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="logo pagina" loading="lazy"></img>`
+    imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="Foto" loading="lazy"></img>`
     texto.innerHTML = `
     
     <p>${imagenes[actual].descripcion}</p>

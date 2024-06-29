@@ -88,7 +88,7 @@ body {
     margin: 0 auto;
     position: relative;
     right: 40%;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .texto {
@@ -319,13 +319,13 @@ footer.Opinion input[type="submit"]:hover {
     }
 
     #selfie {
-        width: 25%;
+        width: 40%;
         height: auto;
         display: block;
         margin: 0 auto;
         position: relative;
         right: 0%;
-        border-radius: 50%;
+        border-radius: 20%;
     }
 
     .texto p {
