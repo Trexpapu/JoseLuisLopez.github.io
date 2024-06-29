@@ -1,0 +1,367 @@
+/* CSS general */
+
+/* Importar la fuente Black */
+@font-face {
+    font-family: 'Black';
+    src: url('../fonts/static/Exo2-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Texts';
+    src: url('../fonts/static/Exo2-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.numbers {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Black';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+}
+
+.numbers nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.numbers nav ul li {
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    font-family: 'Black';
+    position: fixed;
+    width: 100%;
+    top: 5%;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #001f3f;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #001f3f;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: #007bff;
+}
+
+#selfie {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    right: 40%;
+    border-radius: 50%;
+}
+
+.texto {
+    overflow: hidden;
+    margin-top: -8%;
+}
+
+.texto p {
+    border-left: 2px solid #333;
+    margin-left: 19%;
+    margin-top: 0%;
+    font-family: 'Texts';
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    width: 700px; /* Ajusta el ancho según tus necesidades */
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: contain; /* Cambiado de cover a contain */
+    filter: saturate(175%);
+    background-color: rgb(131, 127, 127);
+}
+
+.descripcion {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.descripcion p {
+    align-items: center;
+    padding: 20px;
+    font-family: 'Black';
+}
+
+.puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p {
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+}
+
+.puntos .bold {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB;
+}
+
+.atras img, .adelante img {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Fondo_seccion {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #9ca9aa;
+}
+
+/* Estilos para los enlaces */
+.link_contact {
+    color: #000000; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    display: block; /* Mostrar en bloque */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para los enlaces al pasar el ratón */
+.link_contact:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+
+/* Estilos para el enlace de WhatsApp */
+.WhatsApp_Link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* Estilos para el icono de WhatsApp */
+.WhatsApp_Icon {
+    width: 50px;
+    height: auto;
+    border-radius: 80%;
+}
+
+footer.nombre {
+    top: 200%;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    color: #fff;
+}
+footer.Opinion {
+    background-color: #9ca9aa; /* Fondo negro */
+    color: #000000; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+    margin-top: 50px; /* Margen superior */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+footer.Opinion form {
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+footer.Opinion label {
+    display: block; /* Mostrar en bloque */
+    margin-bottom: 10px; /* Margen inferior */
+    font-family: 'Texts';
+
+}
+
+footer.Opinion input[type="text"],
+footer.Opinion input[type="email"],
+footer.Opinion textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Margen inferior */
+    border: 1px solid #000000; /* Borde blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente */
+    color: #000000; /* Texto blanco */
+    
+}
+
+footer.Opinion input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+footer.Opinion input[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+#menu{
+    display: none;
+}
+
+
+/* Responsivo */
+@media (max-width: 1023px) {
+    .navbar h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+    #menu{
+        display: inline;
+        width: 7%;
+        height: 10%;
+        margin-left: 45%;
+    }
+
+    .showNavBar nav ul{
+        text-align: center;
+        padding-top: 10px;
+        display: inline;
+    }
+    .notShowNavBar nav ul{
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .navbar nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .numbers nav ul li {
+        display: block;
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    #selfie {
+        width: 25%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        right: 0%;
+        border-radius: 50%;
+    }
+
+    .texto p {
+        margin-left: 2%;
+        margin-top: 12%;
+    }
+
+    .carrusel {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img {
+        height: 200px;
+        width: 90%;
+    }
+
+    .descripcion {
+        position: static;
+        margin-top: 10px;
+        backdrop-filter: none;
+        background-color: rgba(63, 106, 138, 0.5);
+        border-radius: 10px;
+    }
+
+    .descripcion p {
+        padding: 10px;
+    }
+
+    .puntos p {
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    .atras img, .adelante img {
+        height: 30px;
+        width: 30px;
+    }
+}
